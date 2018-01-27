@@ -18,7 +18,7 @@ export class StudentsService {
   constructor(private http: HttpClient) { }
 
 
-  // Pega todos os alunos.
+ 
   getAlunos(): Observable<IStudent[]>
   {
       return this.http.get<IStudent[]>(this.list_students_url)
