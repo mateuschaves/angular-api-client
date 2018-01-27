@@ -8,6 +8,9 @@ import { StudentsModule } from './students/students.module';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MyHttpInterceptor } from './my-http-interceptor';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { MyHttpInterceptor } from './my-http-interceptor';
     BrowserModule,
     AppRoutingModule,
     StudentsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatToolbarModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

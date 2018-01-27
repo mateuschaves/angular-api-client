@@ -1,4 +1,20 @@
 
+<mat-toolbar class="toolbar">
+        <button mat-button [matMenuTriggerFor]="menu" class="option_menu" >Alunos</button>
 
-<app-students></app-students>
+        <mat-menu #menu="matMenu" yPosition="above">
+          <button mat-menu-item>Cadastrar</button>
+          <button mat-menu-item>Mostrar</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="menu" class="option_menu" >Alunos</button>
+
+        <mat-menu #menu="matMenu" yPosition="above">
+          <button mat-menu-item>Cadastrar</button>
+          <button mat-menu-item>Mostrar</button>
+        </mat-menu>
+</mat-toolbar>
+<app-autocomplete [s]="teste" ></app-autocomplete>
+
+<app-list></app-list>
 <router-outlet></router-outlet>
