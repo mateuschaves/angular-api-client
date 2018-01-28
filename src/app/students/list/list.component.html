@@ -14,6 +14,9 @@
           <td>  {{ s.aluno.nome }}    </td>
           <td>  {{ s.aluno.status }}  </td>
           <td>  {{ s.mensalidade.status }}  </td>
+          <td *ngIf="s.mensalidade.status == 'Débito'"> <i class="red big money icon"></i> </td>
+          <td *ngIf="s.mensalidade.status == 'A vencer'"> <i class="yelow big money icon"></i></td>
+          <td *ngIf="s.mensalidade.status == 'Pago'"> <i class="green big check circle icon"></i></td>
       </tr>
     </tbody>
 </table>
