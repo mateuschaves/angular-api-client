@@ -1,5 +1,4 @@
 .style { 
-    width: 500px;
-    margin-left: 25%;
+    min-width: 0px;
     text-align: center;
 }
