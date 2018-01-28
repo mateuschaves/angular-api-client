@@ -1,3 +1,4 @@
+import { PagenotfoundComponent } from './../pagenotfound/pagenotfound.component';
 import { StudentsService } from './services/students.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -8,7 +9,6 @@ import { ListComponent } from './list/list.component';
 import { BrowserModule } from '@angular/platform-browser';
 
 
-
 @NgModule({
   imports: [
     CommonModule,
@@ -16,8 +16,8 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserAnimationsModule,
     FormsModule
   ],
-  declarations: [ListComponent,  ListComponent],
+  declarations: [ListComponent, PagenotfoundComponent],
   providers: [StudentsService],
-  exports: [ListComponent]
+  exports: [ListComponent, PagenotfoundComponent]
 })
 export class StudentsModule { }

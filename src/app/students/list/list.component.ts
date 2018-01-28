@@ -3,7 +3,7 @@ import { StudentsService } from '../services/students.service';
 declare var $:any;
 
 @Component({
-  selector: 'app-list',
+  selector: 'list-alunos',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })

@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/alunos', pathMatch: 'full'},
-  {path: 'aluno', component: ListComponent},
+  {path:'', redirectTo: '/alunos', pathMatch: 'full'},
+  {path: 'alunos', component: ListComponent},
   {path: "**", component: PagenotfoundComponent},
 ];
 
