@@ -12,7 +12,7 @@ export class MyHttpInterceptor implements HttpInterceptor{
         console.log("intercepted request ... ");
 
         const authReq = req.clone({
-            headers: req.headers.set("Authorization", "Bearer "  + "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE1MTcwNDA1NzYsImV4cCI6MTUxNzA3MDU3NiwibmJmIjoxNTE3MDQwNTc2LCJqdGkiOiJlcTNzRDg4OHhwOFJOZ2pOIiwic3ViIjo0MCwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.Zk-h0JIzmAatzGsKf6LHgEnuCim8ztE3Cu13td6f2oI"),
+            headers: req.headers.set("Authorization", "Bearer "  + "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE1MTcxNDg0MjUsImV4cCI6MTUxNzE3ODQyNSwibmJmIjoxNTE3MTQ4NDI1LCJqdGkiOiJISERaTFczMlNteGJ3Q3JqIiwic3ViIjoxLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.8Pq37fvALwm6_FO7bWAW_KSVIOWRBrkO4d8nU2M30QY"),
         });
 
         console.log("Sending request with new header now ...");

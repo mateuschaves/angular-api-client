@@ -3,14 +3,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule  } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { ListComponent } from './list/list.component';
+import { BrowserModule } from '@angular/platform-browser';
+
 
 
 @NgModule({
@@ -18,16 +14,10 @@ import { ListComponent } from './list/list.component';
     CommonModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatAutocompleteModule,
-    MatFormFieldModule,
-    MatInputModule,
-    ReactiveFormsModule,
     FormsModule
   ],
-  declarations: [ListComponent, AutocompleteComponent, ListComponent],
+  declarations: [ListComponent,  ListComponent],
   providers: [StudentsService],
-  exports: [ListComponent, AutocompleteComponent]
+  exports: [ListComponent]
 })
 export class StudentsModule { }

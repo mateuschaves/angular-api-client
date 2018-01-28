@@ -1,20 +1,46 @@
+<div class="ui small menu">
+    <div  class="ui dropdown item">
+        Alunos <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item">Matricular</a>
+          <a class="item">Mostrar</a>
+        </div>
+      </div>
 
-<mat-toolbar class="toolbar">
-        <button mat-button [matMenuTriggerFor]="menu" class="option_menu" >Alunos</button>
+      <div  class="ui dropdown item">
+          Administração <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item">Relatórios</a>
+            <a class="item">Funcionários</a>
+            <a class="item">Novo Funcionário</a>
+            <a class="item">Alunos Inativos</a>
+          </div>
+        </div>
 
-        <mat-menu #menu="matMenu" yPosition="above">
-          <button mat-menu-item>Cadastrar</button>
-          <button mat-menu-item>Mostrar</button>
-        </mat-menu>
+        <div  class="ui dropdown item">
+            Treino <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item">Cadastrar</a>
+              <a class="item">Mostrar</a>
+            </div>
+          </div>
+   
+    <div class="right menu">
+      <div  class="ui dropdown item">
+        Language <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item">English</a>
+          <a class="item">Russian</a>
+          <a class="item">Spanish</a>
+        </div>
+      </div>
+      <div class="item">
+          <div class="ui primary button">Sign Up</div>
+      </div>
+    </div>
+  </div>
 
-        <button mat-button [matMenuTriggerFor]="menu" class="option_menu" >Alunos</button>
-
-        <mat-menu #menu="matMenu" yPosition="above">
-          <button mat-menu-item>Cadastrar</button>
-          <button mat-menu-item>Mostrar</button>
-        </mat-menu>
-</mat-toolbar>
-<app-autocomplete [s]="teste" ></app-autocomplete>
-
-<app-list></app-list>
+<div class="ui container">
+    <app-list></app-list>
+</div>
 <router-outlet></router-outlet>
