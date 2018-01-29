@@ -1,3 +1,4 @@
+import { FilterPipe } from './../filter.pipe';
 import { PagenotfoundComponent } from './../pagenotfound/pagenotfound.component';
 import { StudentsService } from './services/students.service';
 import { NgModule } from '@angular/core';
@@ -16,7 +17,7 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserAnimationsModule,
     FormsModule
   ],
-  declarations: [ListComponent, PagenotfoundComponent],
+  declarations: [ListComponent, PagenotfoundComponent, FilterPipe],
   providers: [StudentsService],
   exports: [ListComponent, PagenotfoundComponent]
 })

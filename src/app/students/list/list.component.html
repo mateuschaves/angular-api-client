@@ -1,4 +1,14 @@
 <h2 class="style">Alunos</h2>
+<div class="ui search">
+    <input class="prompt" type="text" name="search" placeholder="Ache alguém =)" [(ngModel)]="search">
+    <div class="results"></div>
+</div>
+<p class="searching"  *ngIf="search" > {{ "Procurando alunos que contêm o nome "  + search }}</p>
+<div *ngIf="students.length == 0 ">
+     <div class="ui active inverted dimmer">
+       <div class="ui text loader">Loading</div>
+     </div>
+  </div>
 <table id="table" class="ui  very basic selectable striped  sortable celled table style">
     <thead>
       <tr>
@@ -9,7 +19,7 @@
       </tr>
     </thead>
     <tbody >
-      <tr *ngFor="let s of students.alunos">
+      <tr *ngFor="let s of  ( students.alunos | filter:search)">
           <td>  {{ s.aluno.nome }}    </td>
           <td>  {{ s.aluno.status }}  </td>
           <td>  {{ s.mensalidade.status }}  </td>
@@ -19,8 +29,4 @@
       </tr>
     </tbody>
 </table>
-
-
-
-
  

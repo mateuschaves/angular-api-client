@@ -9,8 +9,10 @@ declare var $:any;
 })
 export class ListComponent  implements OnInit  {
 
-  public students = [];
+  public students = <any>[];
   public errorMsg;
+
+  public names = [];
 
   showDropDown(): void{
      $('.ui.selection.dropdown').dropdown();
@@ -25,7 +27,7 @@ export class ListComponent  implements OnInit  {
 
   ngOnInit(){
     {
-      $('table').tablesort()
+      $('table').tablesort();
     }
   }
   

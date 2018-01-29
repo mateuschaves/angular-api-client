@@ -10,7 +10,7 @@ import 'rxjs/add/observable/throw';
 @Injectable()
 export class StudentsService {
 
-  public alunos = [];
+  public alunos = <any>[];
 
   // LIST STUDENTS URL
   public list_students_url = 'http://localhost:8000/api/aluno/list';
@@ -21,8 +21,10 @@ export class StudentsService {
  
   getAlunos(): Observable<IStudent[]>
   {
-      return this.http.get<IStudent[]>(this.list_students_url)
+      this.alunos = this.http.get<IStudent[]>(this.list_students_url)
                       .catch(this.errorHandler);
+        console.log(this.alunos);
+        return this.alunos;
   }
 
 
