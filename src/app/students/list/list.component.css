@@ -6,9 +6,20 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12pt;
 }
-
+.find{
+    margin-top: 1.5%;
+}
 .loading{
-    
     margin-left: 30%;
     margin-top:10%;
 }
+.filter-options{
+    display: flex;
+}
+.select-students-filter{
+    width: 20%;
+    margin-left: 65%;
+    margin-right: 15%;
+}
+
+/*margin-left: 725px;*/
