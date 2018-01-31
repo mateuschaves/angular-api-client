@@ -6,9 +6,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule  } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListComponent } from './list/list.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserAnimationsModule,
     FormsModule
   ],
-  declarations: [ListComponent, PagenotfoundComponent, FilterPipe, SelectFilterPipe],
+  declarations: [ListComponent, PagenotfoundComponent, FilterPipe, SelectFilterPipe, RegisterComponent],
   providers: [StudentsService],
   exports: [ListComponent, PagenotfoundComponent]
 })

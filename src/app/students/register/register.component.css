@@ -1,0 +1,39 @@
+.nome {
+    width: 300px;
+}
+.row {
+    display: flex;
+}
+.padding-left{
+    padding-left: 20px;
+}
+.width-default{
+    width: 250px;
+}
+.description{
+    padding-top:15px;
+}
+.email {
+    padding-left: 20px;
+    width: 300px;
+}
+.endereco{
+    width:300px;
+}
+.numero{
+    width: 150px;
+}
+.vencimento {
+    width: 200px;
+}
+.foto{
+    width: 150px;
+}
+.valor-pago{
+    width: 150px;
+}
+.btn{
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+}

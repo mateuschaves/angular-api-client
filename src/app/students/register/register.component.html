@@ -1,0 +1,134 @@
+<form class="ui form">
+    <h4 class="ui dividing header description"> Registrar um aluno </h4>
+    <br>
+    <!-- ROW 1 -->
+     <div class="row">
+          <!-- NOME -->
+          <div class="field nome">
+              <label>Nome</label>
+              <div class="ui left icon input">
+                <input type="text" name="nome" placeholder="Ex. Mateus Henrique" required>
+                <i class="user icon"></i>
+              </div>
+          </div>
+          <!-- TELEFONE -->
+          <div class="field width-default padding-left">
+              <label>Telefone</label>
+              <div class="ui left icon input">
+                <input type="text" name="telefone" maxlength="16" placeholder="Ex. (81) 9.9972-1819">
+                <i class="call icon"></i>
+              </div>
+          </div>
+          <!-- OBJETIVO -->
+          <div class="field width-default padding-left">
+              <label>Objetivo</label>
+              <div class="ui left icon input">
+                <input type="text" name="objetivo" placeholder="Ex. Ficar Monstro">
+                <i class="checkmark icon"></i>
+              </div>
+          </div>
+          <!-- EMAIL -->
+          <div class="field email">
+              <label>Email</label>
+              <div class="ui left icon input">
+                <input type="email" name="email" placeholder="Ex. mateus.henrique@gmail.com">
+                <i class="mail icon"></i>
+              </div>
+          </div>
+     </div>
+     <!-- END ROW 1 -->
+
+     <!-- ROW 2 -->
+     <div class="row">
+       <!-- ENDEREÇO -->
+        <div class="field endereco">
+            <label>Endereço</label>
+            <div class="ui left icon input">
+              <input type="text" name="endereco" placeholder="Ex. Avenida Agamenon Magalhães">
+              <i class="map icon"></i>
+            </div>
+        </div>
+        <!-- NÚMERO -->
+        <div class="field numero  padding-left">
+            <label>Número</label>
+            <div class="ui left icon input">
+              <input type="text" name="numero" placeholder="Ex. 775">
+              <i class="map icon"></i>
+            </div>
+        </div>
+        <!-- BAIRRO -->
+        <div class="field padding-left">
+            <label>Bairro</label>
+            <div class="ui left icon input">
+              <input type="text" placeholder="Ex. Morada Nova">
+              <i class="map icon"></i>
+            </div>
+        </div>
+         <!-- DATA DE NASCIMENTO -->
+         <div class="field padding-left">
+            <label>Data de nascimento</label>
+            <div class="ui left icon input">
+              <input type="date" placeholder="Ex. 21/10/1998">
+              <i class="calendar icon"></i>
+            </div>
+        </div>
+        <!-- DIA DO VENCIMENTO -->
+        <div class="field  vencimento  padding-left">
+            <label>Dia do vencimento</label>
+            <div class="ui left icon input">
+              <input type="number" name="vencimento" placeholder="Ex. 15">
+              <i class="checked calendar icon"></i>
+            </div>
+        </div>
+     </div>
+     <!-- END ROW 2 -->
+
+     <!-- ROW 3 -->
+     <div class="row">
+        <!-- FOTO -->
+        <div class="field foto">
+            <label>Foto de perfil</label>
+            <label for="file" class="ui left icon basic button">
+                <i class="image icon"></i>
+                Foto</label>
+            <input type="file" id="file" style="display:none">
+        </div>
+     </div>
+     <h4 class="ui dividing header description"> Matrícula em atividades </h4>
+     <br>
+     <div class="row">
+            <!-- ATIVIDADES -->
+            <div class="ui form width-default">
+                <div class="field">
+                    <label>Atividades</label>
+                    <select multiple="" class="ui dropdown" >
+                        <option value="">Selecione uma opção</option>
+                        <option *ngFor="let atividade of atividades.atividades" value="{{atividade.id}}">{{atividade.nome}}</option>
+                    </select>
+                </div>
+            </div>
+            <!-- COMBOS -->
+            <div class="ui form width-default padding-left">
+                <div class="field">
+                    <label>Combos</label>
+                    <select multiple="" class="ui dropdown" >
+                        <option value="">Selecione uma opção</option>
+                        <option *ngFor="let combo of combos.combos" value="{{combo.id}}">{{combo.nome}}</option>
+                    </select>
+                </div>
+            </div>
+            <!-- VALOR PAGO -->
+            <div class="field valor-pago padding-left">
+                <label>Valor Pago</label>
+                <div class="ui left icon input">
+                    <input type="number" name="valor_pago" placeholder="Ex. 50">
+                    <i class="money calendar icon"></i>
+                </div>
+            </div>
+     </div>
+     <br><br>
+     <div class="row">
+            <button class="ui basic button btn"><i class=" icon add user"></i>Continuar</button>
+     </div>
+     
+</form>
